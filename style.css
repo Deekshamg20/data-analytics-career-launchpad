@@ -76,7 +76,7 @@ body {
 }
 
 .nav-item {
-  color: var(--text-secondary);
+  color: #334155;
   text-decoration: none;
   padding: 10px 14px;
   border-radius: 6px;
@@ -97,12 +97,12 @@ body {
 
 .sidebar-footer {
   padding: 16px;
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid #e2e8f0;
 }
 
 .tagline {
   font-size: 11px;
-  color: var(--text-muted);
+  color: #64748b;
   text-align: center;
 }
 
