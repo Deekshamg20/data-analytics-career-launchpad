@@ -480,16 +480,16 @@ body {
 }
 
 .template-body {
-  background: #080c13;
+  background: #ffffff;
   padding: 16px;
   border-radius: 8px;
   font-family: var(--font-mono);
   font-size: 12px;
-  color: var(--text-secondary);
+  color: #334155;
   white-space: pre-wrap;
   word-wrap: break-word;
   line-height: 1.6;
-  border: 1px solid var(--border-color);
+  border: 1px solid #d1d5db;
 }
 
 /* Toast */
