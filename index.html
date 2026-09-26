@@ -1,0 +1,254 @@
+The HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data & Analytics Career Launchpad</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="layout">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="logo-icon">📊</span>
+        <span class="logo-text">Launchpad<strong>DA</strong></span>
+      </div>
+      <nav class="nav-menu">
+        <a href="#directory" class="nav-item active">🏢 Company Directory</a>
+        <a href="#skill-matrix" class="nav-item">⚡ Skill Matrix</a>
+        <a href="#action-plan" class="nav-item">📅 4-Week Plan</a>
+        <a href="#portfolio" class="nav-item">📁 Portfolio & Outreach</a>
+      </nav>
+      <div class="sidebar-footer">
+        <p class="tagline">Analytics-First • Low-Code Route</p>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <header class="top-header">
+        <div>
+          <h1>Practical Analytics Internship Hub</h1>
+          <p class="subtitle">Bypass heavy DSA theory. Focus on applied SQL, BI dashboards, and direct recruiter outreach.</p>
+        </div>
+      </header>
+
+      <!-- Section: Company Directory -->
+      <section id="directory" class="content-section">
+        <div class="section-head">
+          <div>
+            <h2>Target Company Directory</h2>
+            <p>Filter high-yield employers by hiring style, odds, and work domain.</p>
+          </div>
+          <div class="filter-controls">
+            <input type="text" id="search-input" placeholder="Search by name, city, domain..." />
+            <div class="filter-pills" id="category-filters">
+              <button class="pill-btn active" data-filter="all">All</button>
+              <button class="pill-btn" data-filter="mid-sized">Mid-Sized / Agencies</button>
+              <button class="pill-btn" data-filter="mnc">MNCs</button>
+              <button class="pill-btn" data-filter="incubation">Incubators & Startups</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-grid" id="companies-grid">
+          <!-- Dynamic render via script.js -->
+        </div>
+      </section>
+
+      <!-- Section: Skill Matrix -->
+      <section id="skill-matrix" class="content-section">
+        <div class="section-head">
+          <div>
+            <h2>Low-Code Skill Matrix</h2>
+            <p>High-ROI tools replacing traditional algorithmic software engineering rounds.</p>
+          </div>
+        </div>
+
+        <div class="matrix-grid">
+          <div class="matrix-card">
+            <div class="matrix-header">
+              <span class="badge badge-essential">Essential</span>
+              <h3>Advanced SQL</h3>
+            </div>
+            <p class="matrix-desc">Core data extraction, transformation, and business aggregations.</p>
+            <ul class="skills-list">
+              <li>JOINs (INNER, LEFT, CROSS)</li>
+              <li>Window Functions (ROW_NUMBER, DENSE_RANK, LEAD/LAG)</li>
+              <li>CTEs and subqueries for data manipulation</li>
+              <li>Aggregation with GROUP BY, HAVING, and CASE WHEN</li>
+            </ul>
+            <div class="benchmark"><strong>Benchmark:</strong> Solve intermediate HackerRank/StrataScratch SQL problems.</div>
+          </div>
+
+          <div class="matrix-card">
+            <div class="matrix-header">
+              <span class="badge badge-essential">Essential</span>
+              <h3>Power BI / Tableau</h3>
+            </div>
+            <p class="matrix-desc">Executive dash-boarding, semantic modeling, and KPI tracking.</p>
+            <ul class="skills-list">
+              <li>Star-schema data modeling (Facts vs. Dimensions)</li>
+              <li>DAX basics: CALCULATE, RELATED, SUMX, Time Intelligence</li>
+              <li>Row-Level Security (RLS) & Drill-through navigation</li>
+              <li>UX best practices for C-suite executive consumption</li>
+            </ul>
+            <div class="benchmark"><strong>Benchmark:</strong> Build 2 interactive dashboards linked to public datasets.</div>
+          </div>
+
+          <div class="matrix-card">
+            <div class="matrix-header">
+              <span class="badge badge-growth">High Value</span>
+              <h3>Applied Business Analytics</h3>
+            </div>
+            <p class="matrix-desc">Translating raw data into measurable operational decisions.</p>
+            <ul class="skills-list">
+              <li>Cohort analysis & retention curve modeling</li>
+              <li>Funnel analysis for SaaS and E-commerce</li>
+              <li>A/B test significance testing basics</li>
+              <li>Spreadsheet mastery: INDEX/MATCH, XLOOKUP, Pivot Tables</li>
+            </ul>
+            <div class="benchmark"><strong>Benchmark:</strong> Write a 1-page business brief identifying revenue leakage.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: 4-Week Plan -->
+      <section id="action-plan" class="content-section">
+        <div class="section-head">
+          <div>
+            <h2>4-Week Structured Action Plan</h2>
+            <p>2 to 3 hours per day dedicated to skill acquisition, asset creation, and direct pitching.</p>
+          </div>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="week-label">Week 01</span>
+              <span class="hours-tag">2.5 hrs/day</span>
+            </div>
+            <h3>SQL Mastery & Schema Modeling</h3>
+            <p>Ditch theory books. Work straight inside PostgreSQL or BigQuery on realistic sales data.</p>
+            <ol class="plan-steps">
+              <li><strong>Days 1–3:</strong> Master aggregate queries, multi-table joins, and temporal extraction.</li>
+              <li><strong>Days 4–5:</strong> Build fluency with CTEs, rolling sums, and ranking window functions.</li>
+              <li><strong>Days 6–7:</strong> Complete 20 real interview queries on StrataScratch/LeetCode Data track.</li>
+            </ol>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="week-label">Week 02</span>
+              <span class="hours-tag">3 hrs/day</span>
+            </div>
+            <h3>Power BI Portfolio Project #1</h3>
+            <p>End-to-end dashboard focusing on Customer Churn or Supply Chain bottlenecks.</p>
+            <ol class="plan-steps">
+              <li><strong>Days 8–9:</strong> Source raw dataset (Kaggle/data.gov), normalize into Star Schema.</li>
+              <li><strong>Days 10–12:</strong> Write DAX measures for Year-over-Year (YoY) growth and churn rates.</li>
+              <li><strong>Days 13–14:</strong> Design accessible UI with custom cards, tooltips, and slicers.</li>
+            </ol>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="week-label">Week 03</span>
+              <span class="hours-tag">2 hrs/day</span>
+            </div>
+            <h3>Case Study #2 & GitHub Documentation</h3>
+            <p>Translate visual dashboards into readable GitHub repositories and interactive web links.</p>
+            <ol class="plan-steps">
+              <li><strong>Days 15–17:</strong> Create SQL pipeline demonstrating ETL, cleanup, and aggregation.</li>
+              <li><strong>Days 18–19:</strong> Publish Power BI to web or record a 90-second Loom dashboard walkthrough.</li>
+              <li><strong>Days 20–21:</strong> Write clean README documentation with context, findings, and business recommendations.</li>
+            </ol>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="week-label">Week 04</span>
+              <span class="hours-tag">3 hrs/day</span>
+            </div>
+            <h3>Direct Outreach & Interview Sprints</h3>
+            <p>Target mid-sized firms, startup founders, and agency leads with tailored work samples.</p>
+            <ol class="plan-steps">
+              <li><strong>Days 22–24:</strong> Identify 30 mid-sized agencies and 15 incubators; map founder emails via Hunter/Apollo.</li>
+              <li><strong>Days 25–26:</strong> Send 8 personalized cold emails/LinkedIn notes daily with your project link attached.</li>
+              <li><strong>Days 27–28:</strong> Follow up on open conversations; prepare responses for take-home data challenges.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Portfolio & Outreach -->
+      <section id="portfolio" class="content-section">
+        <div class="section-head">
+          <div>
+            <h2>Portfolio Blueprint & Outreach Templates</h2>
+            <p>Pre-written copy engineered for high conversion rates. 1-click copy to clipboard.</p>
+          </div>
+        </div>
+
+        <div class="outreach-grid">
+          <!-- Template 1 -->
+          <div class="template-card">
+            <div class="template-header">
+              <div>
+                <span class="badge badge-template">Cold Email</span>
+                <h4>Mid-Sized / Startup Founder Outreach</h4>
+              </div>
+              <button class="copy-btn" data-target="template-email">Copy Template</button>
+            </div>
+            <pre class="template-body" id="template-email">Subject: Quick observation on your [Metric/Product] data + quick dashboard
+
+Hi [First Name],
+
+I've been tracking [Company Name]'s recent moves in the [Domain/Niche] space. 
+
+Instead of a generic resume, I built a quick, interactive 1-page dashboard modeling [Specific Problem, e.g., Customer Retention / Inventory Turnover]:
+👉 [Link to Public Power BI / GitHub Case Study]
+
+Key insight: The model flags a potential [X]% margin recovery when segmenting [Target User/Region].
+
+I'm looking for a 3-month Data/BI Analytics internship. If you have 5 minutes this Thursday, I'd love to show you how I can automate similar pipeline reporting for your team.
+
+Best regards,
+[Your Name]
+[Phone Number] | [LinkedIn Profile URL]</pre>
+          </div>
+
+          <!-- Template 2 -->
+          <div class="template-card">
+            <div class="template-header">
+              <div>
+                <span class="badge badge-template">LinkedIn Note</span>
+                <h4>Direct Recruiter / Hiring Lead Connection</h4>
+              </div>
+              <button class="copy-btn" data-target="template-linkedin">Copy Template</button>
+            </div>
+            <pre class="template-body" id="template-linkedin">Hi [First Name],
+
+I noticed you're heading analytics initiatives at [Company Name]. I specialize in Power BI and automated SQL workflows, bypassing heavy theory to focus on direct business metric dashboards.
+
+I recently modeled a [Specific Industry] dataset to identify customer drop-offs: [Link to Portfolio/Loom]
+
+Are you open to bringing on a proactive data analytics intern this quarter? Would love to connect regardless.
+
+Best,
+[Your Name]</pre>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast">Copied to clipboard!</div>
+  <script src="script.js"></script>
+</body>
+</html>
